@@ -22,7 +22,6 @@ const adminOrderRoute = require("./routes/admin/order.routes");
 env.config();
 
 //mongoBD connection
-//mongodb+srv://root:<password>@cluster0.sojy4.mongodb.net/<dbname>?retryWrites=true&w=majority
 mongoose.connect(
     `mongodb+srv://${process.env.MONGO_DB_USER}:${process.env.MONGO_DB_PASSWORD}@cluster0.sojy4.mongodb.net/${process.env.MONGO_DB_DATABASE}?retryWrites=true&w=majority`, 
     {useNewUrlParser: true, 
